@@ -57,7 +57,7 @@ function(input, output) {
   
   # Select MAC / MAF
   output$CustomMAC <- renderUI({
-    if ((is.null(ItemList())) | (input$qMAC == FALSE)) {
+    if (is.null(ItemList())){
       return ()
     } else
       tagList(
@@ -72,7 +72,7 @@ function(input, output) {
   
   # Select Trait
   output$CustomTrait <- renderUI({
-    if ((is.null(ItemList())) | (input$qTrait == FALSE)) {
+    if (is.null(ItemList())){
       return ()
     } else
       tagList(
@@ -119,9 +119,6 @@ function(input, output) {
     if (is.null(input$your_data)) {
       return(NULL)
     } 
-    if(input$qTrait == F){
-      return(NULL)
-    }
     else{
       data <- my_data()
       trait <- unique(data[,input$SelectTrait])
@@ -173,10 +170,7 @@ function(input, output) {
     
     data2 <- subset(data, data$Chr == input$SelChromo)
     data2 <- subset(data2, data2$LOD > input$SelLOD)
-    
-    if(input$qTrait == T){
-      data2 <- subset(data2, data2$Trait == input$SelTrait)
-    }
+    data2 <- subset(data2, data2$Trait == input$SelTrait)
     
     data3 <- subset(data2, select=c("Chr", "Pos", "MAC", "LOD", "Trait"))
     data3

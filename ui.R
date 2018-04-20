@@ -18,9 +18,7 @@ fluidPage(
                 uiOutput("CustomChr"),
                 uiOutput("CustomPos"),
                 uiOutput("CustomPval"),
-                checkboxInput("qMAC", "Does your data contain information of Minor Allele Frequency / Count (MAC / MAF) ?"),
                 uiOutput("CustomMAC"),
-                checkboxInput("qTrait", "Does your data contain information on mapped trait?"),
                 uiOutput("CustomTrait"),
                 actionButton("Go_data", "Set the dataset")
                 
@@ -51,8 +49,22 @@ fluidPage(
     
     tabPanel("Background information",
              
-             sidebarPanel(),
-             mainPanel()
+             sidebarPanel(
+               "SNPer was developed by ", a("Magdalena Julkowska", href = "https://mmjulkowska.github.io/", target = "_blank"), ", a PostDoc at " , a("King Abdullah University for Science and Technology", href = "https://www.kaust.edu.sa/en", target = "_blank"), " working in the group of ", a("Prof. Mark Tester.", href="https://scholar.google.com/citations?user=FTvzOtkAAAAJ&hl=en", target= "_blank"),
+               br(),br(),
+               "If you have any questions or suggestions please contact", span("Magdalena.Julkowska@kaust.edu.sa", style="color:blue"),
+               br(),br(),
+               "The README containing instructions on how to use SNPer is available", a("HERE", href="https://mmjulkowska.github.io/SNPer/", target = "_blank") 
+             ),
+             mainPanel(
+               "About the SNPer:",
+               br(),br(),
+               "The SNPer is a tool to quickly visualize the pre-analyzed Genome Wide Association Study results. The power of high-throughput phenotyping, or simply the untapped enthousiasm of the hardworking scientists, are creating the datasets that are bigger than ever. Looking at the GWAS results and comparing them between different traits / conditions, can be a challende. This tool is going to make it so much easier for you to explore your GWAS data.",
+               br(),br(),
+               "The only thing you need is a compiled .csv file containing the Chromosome, Position, P-value, Minor Allele Frequency and one collumn containing the traits identifiers.",
+               br(),br(),
+               "The instruction on how to cite the app will be available shortly HERE"
+             )
     )
 
     # end of the app    
