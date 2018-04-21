@@ -1,12 +1,11 @@
 fluidPage(
   #theme = shinytheme("yeti"),
   navbarPage(
-    title = ">> SNPer - precision GWAS mapping <<",
+    title = ">> SNPer <<",
     
     # Tab 1 = = = = = = = = = = = = = = >> BACKGROUND INFORMATION << = = = = = = = = = = = = = = = = = = 
     
-    tabPanel("Data upload",
-             
+    tabPanel("Data upload", icon=icon("table"),
              sidebarPanel(
                
                fluidRow(
@@ -32,7 +31,7 @@ fluidPage(
     ),
     # End of Data upload tab
     
-    tabPanel("SNP viewer",
+    tabPanel("SNP viewer", icon = icon("bullseye"),
              sidebarPanel(
                uiOutput("Trait_View"),
                uiOutput("Chromo_View"),
@@ -47,7 +46,7 @@ fluidPage(
     ),
     # End of SNP viewer file
     
-    tabPanel("Background information",
+    tabPanel("Background information", icon = icon("info-circle"),
              
              sidebarPanel(
                "SNPer was developed by ", a("Magdalena Julkowska", href = "https://mmjulkowska.github.io/", target = "_blank"), ", a PostDoc at " , a("King Abdullah University for Science and Technology", href = "https://www.kaust.edu.sa/en", target = "_blank"), " working in the group of ", a("Prof. Mark Tester.", href="https://scholar.google.com/citations?user=FTvzOtkAAAAJ&hl=en", target= "_blank"),
