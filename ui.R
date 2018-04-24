@@ -62,7 +62,7 @@ fluidPage(
                br(),br(),
                "The only thing you need is a compiled .csv file containing the Chromosome, Position, P-value, Minor Allele Frequency and one collumn containing the traits identifiers.",
                br(),br(),
-               "The instruction on how to cite the app will be available shortly HERE"
+               "You can cite the SNPer as: Julkowska, M.M.  V1.0.2 mmjulkowska/SNPer: Release including README :) DOI: 10.5281/zenodo.1227775"
              )
     )
 
