@@ -1,8 +1,9 @@
 # SNPer
 
-A small tool that will help you visualize the GWAS results from many different experiments. 
+A small tool that will help you visualize the GWAS results from many different experiments. You can cite the SNPer as:
+Julkowska, M.M.  "V1.0.2 mmjulkowska/SNPer: Release including README :)" DOI: 10.5281/zenodo.1227775
 
-The accepted dataformat is ".csv" files. 
+The accepted data format is ".csv" files. 
 
 In the first tab - select your file and select all the neccessary column identifiers from the drop-down menus. Once you are finished, click on "Set the dataset" button. 
 
