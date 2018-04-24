@@ -3,6 +3,14 @@
 A small tool that will help you visualize the GWAS results from many different experiments. You can cite the SNPer as:
 Julkowska, M.M.  "V1.0.2 mmjulkowska/SNPer: Release including README :)" DOI: 10.5281/zenodo.1227775
 
+you can either run the SNPer [on-line](https://mmjulkowska.shinyapps.io/SNPer/) or by typing into your browser 
+
+`install.packages(shiny)`
+
+`library(shiny)`
+
+`shiny::runGitHub("mmjulkowska/SNPer", "mmjulkowska")`
+
 The accepted data format is ".csv" files. 
 
 In the first tab - select your file and select all the neccessary column identifiers from the drop-down menus. Once you are finished, click on "Set the dataset" button. 
