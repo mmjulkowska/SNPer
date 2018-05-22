@@ -3,7 +3,7 @@
 A small tool that will help you visualize the GWAS results from many different experiments. You can cite the SNPer as:
 Julkowska, M.M.  "V1.0.2 mmjulkowska/SNPer: Release including README :)" DOI: 10.5281/zenodo.1227775
 
-you can either run the SNPer [on-line](https://mmjulkowska.shinyapps.io/SNPer/) or by typing into your browser 
+you can either run the SNPer [on-line](https://mmjulkowska.shinyapps.io/SNPer/) or by typing into the terminal windown of the R/S-studio the following commands:
 
 `install.packages(shiny)`
 
